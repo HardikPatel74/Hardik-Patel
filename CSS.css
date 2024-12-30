@@ -8,7 +8,7 @@
 body{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
     background-color: black;
 }
 nav{
@@ -275,34 +275,62 @@ section{
 .services .service-box h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: #077b32;
 }
 
-/* Skills Page */
+/*Skills Page*/
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
 .skills h2{
     text-align: center;
     color: #077b32;
     text-shadow: 0  0 10px #077b32;
-
 }
-.skills .skills-list {
-    list-style: none;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0;
-    text-align: left;
+.skill-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
 }
 
-.skills .skills-list li {
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
     margin-bottom: 15px;
-    font-size: 18px;
-    color: #ffffff;
 }
 
-.skills .skills-list strong {
+.skill-card h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
     color: #077b32;
 }
+.skill-card h3 {
+    font-size: 24px;
+    color: #077b32;
+    margin-bottom: 5px;
+}
 
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-card ul li {
+    margin: 5px 0;
+}
 /* Experience Page */
 .experience h2{
     text-align: center;
@@ -368,105 +396,105 @@ section{
 }
 /* Contact Section */
 .contact {
-    padding: 100px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    background-color: #000000;
     text-align: center;
-    color: #077b32;
-    text-shadow: 0  0 10px #077b32;
-
+    padding: 20px; /* Optional padding for small screens */
 }
 
 .contact h2 {
-    font-size: 32px;
-    color: 077b32;
+    font-size: 2em;
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
     margin-bottom: 20px;
 }
 
 .contact p {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #f7fafc;
+    margin-bottom: 40px;
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.2);
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form .input-box {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.contact-form .input-box input,
-.contact-form .input-box textarea {
+.contact-container {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    max-width: 600px;
+}
+
+.contact-container form {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact-container input,
+.contact-container textarea,
+.contact-container button {
+    background: transparent;
+    border: 2px solid #a0aec0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #f7fafc;
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+    color: #077b32;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
     outline: none;
+    border-color: #077b32;
 }
 
-.contact-form .input-box label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 16px;
-    color: #077b32;
-    pointer-events: none;
-    transition: 0.3s ease;
+.contact-container textarea {
+    resize: none;
+    height: 150px;
 }
 
-.contact-form .input-box input:focus + label,
-.contact-form .input-box textarea:focus + label,
-.contact-form .input-box input:not(:placeholder-shown) + label,
-.contact-form .input-box textarea:not(:placeholder-shown) + label {
-    top: -15px;
-    left: 5px;
-    font-size: 14px;
-    color:077b32 ;
-}
-
-.contact-form .btn {
+.contact-container button {
     padding: 10px;
-    font-size: 18px;
-    color: #fff;
+    border: 1px solid #077b32;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 50%;
+    margin: 30px auto 0;
     background-color: #077b32;
-    border: none;
-    border-radius: 4px;
+    color: white;
+    font-weight: 700;
     cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.contact-form .btn:hover {
-    background-color: #077b32;
-}
-.social-links i{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
-    border: 0.2rem solid #077b32;
-    border-radius: 50%;
-    color: #077b32;
-    margin: 5px 15px;
-    font-size: 1.5rem;
     transition: 0.2s linear;
 }
-.social-links i:hover{
-    scale: 1.3;
-    color: black;
-    background-color: #077b32;
-    filter: drop-shadow(0 0 10px #077b32);
+
+.contact-container button:hover {
+    transform: scale(1.1);
+    color: #077b32;
+    border: 2px solid #077b32;
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px #077b32;
 }
+
+/* Social Links */
+
+.contact .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contact .social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
