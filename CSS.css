@@ -9,7 +9,8 @@ body{
     width: 100%;
     height: 100vh;
     overflow: scroll;
-    background-color: black;
+    background-color:  #000000;
+ 
 }
 nav{
     width: 100%;
@@ -29,15 +30,15 @@ nav{
     font-weight: bold;
 }
 .logo span{
-    color: #077b32;
-    text-shadow: 0 0 10px #077b32;
+    color: #0ee2fe;
+    text-shadow: 0 0 5px #0ee2fe;
 }
 .hamburg,
 .cancel{
     cursor: pointer;
     position: absolute;
     right: 15px;
-    top: 10px;
+    top: 5px;
     color: white;
     display: none;
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
@@ -61,14 +62,14 @@ nav{
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: #077b32;
+    background-color: #0ee2fe;
     transition: 0.2s linear;
 }
 .nav-container .links a:hover::before{
     width: 100%;
 }
 .nav-container .links a:hover{
-    color: #077b32;
+    color: #0ee2fe;
 }
 .dropdown{
     z-index: 100;
@@ -91,7 +92,7 @@ nav{
     transition: 0.2s linear;
 }
 .dropdown .links a:hover{
-    background-color: #077b32;
+    background-color: #0ee2fe;
 }
 section{
     width: 100%;
@@ -109,7 +110,7 @@ section{
     height: 80vh;
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 50px #077b32;
+    box-shadow: 0 0 50px #0ee2fe;
 }
 .main-container .image img{
     width: 100%;
@@ -137,20 +138,20 @@ section{
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
 }
 .content h1 span{
-    color: #077b32;
-    text-shadow: 0  0 10px #077b32;
+    color: #0ee2fe;
+    text-shadow: 0  0 5px #0ee2fe;
 }
 .content .typewriter{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 600;
 }
 .content .typewriter-text{
-    color: #077b32;
-    text-shadow: 0 0 10px #077b32;
+    color: #0ee2fe;
+    text-shadow: 0 0 5px #0ee2fe;
 }
 .content p{
     font-size: clamp(0.4rem , 0.2rem + 9vw, 1rem);
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .social-links i{
     display: inline-flex;
@@ -159,9 +160,9 @@ section{
     width: 3rem;
     height: 3rem;
     background-color: transparent;
-    border: 0.2rem solid #077b32;
+    border: 0.2rem solid #0ee2fe;
     border-radius: 50%;
-    color: #077b32;
+    color: #0ee2fe;
     margin: 5px 15px;
     font-size: 1.5rem;
     transition: 0.2s linear;
@@ -169,14 +170,14 @@ section{
 .social-links i:hover{
     scale: 1.3;
     color: black;
-    background-color: #077b32;
-    filter: drop-shadow(0 0 10px #077b32);
+    background-color: #0ee2fe;
+    filter: drop-shadow(0 0 5px #0ee2fe);
 }
 .content button{
     width: 50%;
     height: 6vh;
     margin: 30px;
-    background-color: #077b32;
+    background-color: #0ee2fe;
     color: white;
     border: none;
     outline: none;
@@ -187,11 +188,11 @@ section{
 }
 .content button:hover{
     scale: 1.1;
-    color: #077b32;
-    border: 2px solid #077b32;
+    color: #0ee2fe;
+    border: 2px solid #0ee2fe;
     background-color: transparent;
     font-weight: 700;
-    box-shadow: 0 0 40px #077b32;
+    box-shadow: 0 0 40px #0ee2fe;
 }
 @media (max-width:884px) {
     nav .logo{
@@ -248,8 +249,8 @@ section{
 }
 .services h2{
     text-align: center;
-    color: #077b32;
-    text-shadow: 0  0 10px #077b32;
+    color: #0ee2fe;
+    text-shadow: 0  0 5px #0ee2fe;
 
 }
 .services .service-box {
@@ -258,7 +259,7 @@ section{
     border-radius: 8px;
     padding: 20px;
     width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
@@ -268,14 +269,14 @@ section{
 
 .services .service-box i {
     font-size: 40px;
-    color: #077b32;
-    margin-bottom: 10px;
+    color: #0ee2fe;
+    margin-bottom: 5px;
 }
 
 .services .service-box h3 {
     font-size: 24px;
-    margin-bottom: 10px;
-    color: #077b32;
+    margin-bottom: 5px;
+    color: #0ee2fe;
 }
 
 /*Skills Page*/
@@ -288,12 +289,12 @@ section{
 }
 .skills h2{
     text-align: center;
-    color: #077b32;
-    text-shadow: 0  0 10px #077b32;
+    color: #0ee2fe;
+    text-shadow: 0  0 5px #0ee2fe;
 }
 .skill-card {
     background: white;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
@@ -313,13 +314,13 @@ section{
 }
 
 .skill-card h2 {
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: 1.5em;
-    color: #077b32;
+    color: #0ee2fe;
 }
 .skill-card h3 {
     font-size: 24px;
-    color: #077b32;
+    color: #0ee2fe;
     margin-bottom: 5px;
 }
 
@@ -334,8 +335,8 @@ section{
 /* Experience Page */
 .experience h2{
     text-align: center;
-    color: #077b32;
-    text-shadow: 0  0 10px #077b32;
+    color: #0ee2fe;
+    text-shadow: 0  0 5px #0ee2fe;
 
 }
 .experience .experience-container {
@@ -352,7 +353,7 @@ section{
     padding: 20px;
     width: 80%;
     max-width: 600px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s;
 }
@@ -361,7 +362,7 @@ section{
 }
 .experience .experience-box h3 {
     font-size: 24px;
-    color: #077b32;
+    color: #0ee2fe;
     margin-bottom: 5px;
 }
 
@@ -408,8 +409,8 @@ section{
 
 .contact h2 {
     font-size: 2em;
-    color: #077b32;
-    text-shadow: 0 0 10px #077b32;
+    color: #0ee2fe;
+    text-shadow: 0 0 5px #0ee2fe;
     margin-bottom: 20px;
 }
 
@@ -436,20 +437,20 @@ section{
     background: transparent;
     border: 2px solid #a0aec0;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 5px 15px;
     font-size: 1em;
     color: #f7fafc;
 }
 
 .contact-container input::placeholder,
 .contact-container textarea::placeholder {
-    color: #077b32;
+    color: #ffffff;
 }
 
 .contact-container input:focus,
 .contact-container textarea:focus {
     outline: none;
-    border-color: #077b32;
+    border-color: #0ee2fe;
 }
 
 .contact-container textarea {
@@ -458,13 +459,13 @@ section{
 }
 
 .contact-container button {
-    padding: 10px;
-    border: 1px solid #077b32;
+    padding: 5px;
+    border: 1px solid #0ee2fe;
     border-radius: 5px;
     font-size: 1em;
     width: 50%;
     margin: 30px auto 0;
-    background-color: #077b32;
+    background-color: #0ee2fe;
     color: white;
     font-weight: 700;
     cursor: pointer;
@@ -473,8 +474,8 @@ section{
 
 .contact-container button:hover {
     transform: scale(1.1);
-    color: #077b32;
-    border: 2px solid #077b32;
+    color: #0ee2fe;
+    border: 2px solid #0ee2fe;
     background-color: transparent;
     font-weight: 700;
     box-shadow: 0 0 40px #077b32;
